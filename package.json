@@ -1,0 +1,27 @@
+{
+  "name": "redis-node",
+  "version": "1.0.0",
+  "main": "script.js",
+  "scripts": {
+    "stash": "npx secretstash -e DEV -s DA00161FD62DB479",
+    "dev": "npm run stash nodemon server.js",
+    "start": "npm run stash node server.js"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "bcrypt-nodejs": "0.0.3",
+    "cors": "^2.8.5",
+    "express": "^4.18.1",
+    "jsonwebtoken": "^8.5.1",
+    "knex": "^2.3.0",
+    "pg": "^8.8.0",
+    "redis": "^4.3.1",
+    "secretstash": "^1.0.5"
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.20"
+  },
+  "description": ""
+}
